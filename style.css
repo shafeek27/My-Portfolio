@@ -1,0 +1,331 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: #333;
+}
+
+h4 {
+  font-weight: 600;
+  color: white;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background-color: #0056b3;
+}
+
+/* Header Section */
+header {
+  background: lightblue;
+  color: black;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap; /* Make the container wrap on smaller screens */
+  align-items: center;
+}
+
+.header-text {
+  max-width: 100%; /* Ensure full width on small screens */
+  flex: 1 1 50%; /* Take half the space on larger screens */
+}
+
+.header-image img {
+  border-radius: 50%; /* Makes the image circular */
+  width: 250px;       /* Ensures the image has equal width */
+  height: 250px;      /* Ensures the image has equal height */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+  margin-left: 80px;  /* Adjusts alignment */
+  object-fit: cover;  /* Ensures the image fills the circle perfectly */
+}
+
+/* About Section */
+.about {
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+  background-image: url('ca.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.about h2 {
+  text-align: center;
+  color: white;
+}
+
+/* Skills Section */
+.skills {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.skill img {
+  width: 50px;
+}
+
+/* Projects Section */
+.projects {
+  padding: 60px 0;
+  background-color: #0057b327;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 45%;
+}
+
+.project-card .btn {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.project-card .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Experience Section */
+.experience {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.experience-grid {
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Makes the container take full viewport height */
+  text-align: center; /* Centers text inside elements */
+  background-color: #f9f9f9; /* Optional: Adds a background color for styling */
+}
+
+.experience-card {
+  max-width: 600px; /* Optional: Restricts the width of the card */
+  padding: 20px; /* Adds padding around content */
+  background: #ffffff; /* Background color for the card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+  border-radius: 10px; /* Rounds the corners */
+}
+
+
+.experience-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Certifications Section */
+.certifications {
+  padding: 60px 0;
+  background-image: url('cgi.avif');
+  background-size: cover;
+  background-position: center;
+}
+
+.certification-card {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* Languages Section */
+.languages {
+  padding: 60px 0;
+  background-image: url('lo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.language-card {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 0;
+  background-image: url('cm.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 30%;
+}
+
+.contact-card img {
+  width: 40px;
+}
+#mycv {
+  padding: 40px 0; /* Adjusts top and bottom padding */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the container */
+  padding: 0 15px; /* Adds some padding inside the container */
+}
+
+.mycv-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Adjusts inner padding */
+}
+
+.mycv-card {
+  text-align: center;
+  max-width: 500px; /* Limits the card width */
+  margin: 0 auto; /* Centers the card */
+  padding: 20px; /* Adds padding for content spacing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+  border-radius: 10px; /* Rounds the corners */
+  background: #fff; /* Adds a white background */
+}
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-image img {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .skills-grid, .project-grid, .experience-grid {
+    flex-direction: column;
+  }
+
+  .project-card, .experience-card {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
